@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import LeftEditorView from "../LeftEditorView";
 
 const LeftNav = () => {
   const [categories, setCategories] = useState([]);
@@ -20,6 +21,7 @@ const LeftNav = () => {
           </h5>
         ))}
       </div>
+      <LeftEditorView></LeftEditorView>
     </div>
   );
 };
